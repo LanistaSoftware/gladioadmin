@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 12px;
+  background-color: #E5E5E5;
+  font-family: 'Exo', sans-serif;
+}
+body {
+  background-color: #E5E5E5;
+  font-family: 'Exo', sans-serif;
+  color: #303030;
+}
+#nav {
+  padding: 30px;
+}
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
