@@ -1,26 +1,31 @@
 <template>
-  <ul class="nav nav-tabs" >
-    <p>Tabs bölümü</p>
-    <router-link :to="tab.link" tag="a"  class="nav-link" v-for="tab in tabs" :key="tab.id" active-class="active">
-      {{tab.label}}
-    </router-link>
+<div class="tab-container">
+  <ul class="tablist">
+    <li v-for="tab in tabs" :key="tab.id" class="tabitem" active-class="activetab">
+      <router-link :to="tab.link" tag="a" class="tablink" active-class="activetab" exact>
+        {{tab.label}}
+      </router-link>
+    </li>
   </ul>
+  <div class="tab-spacing"></div>
+</div>
+
+  
 </template>
 
 <script>
- import {mapGetters} from 'vuex'
   export default {
     name: 'Tabs',
    
     data() {
       return {   
-
+        activeClass:"active-tab"
       }
     },
-    computed:{
-      ...mapGetters({
-        tabs:'getTabs'
-      })
+    props:[
+      "tabs"
+    ],
+    methods:{
 
     }
   }
@@ -35,9 +40,40 @@
   @headingfont: 'Kanit', sans-serif;
   @contentfont: 'Exo', sans-serif;
 
-  a {
-      color: @nbfcolor;
+  .tab-container {
+    display: grid;
+    grid-template-columns: fit-content(80%) auto;
+    align-content: end;
+
+    .tab-spacing {
+      border-bottom: thin solid #dee2e6;
+    }
   }
 
+  .tablist {
+    margin: 0;
+
+    .tabitem {
+      float: left;
+
+
+      .tablink {
+        color: @nbfcolor;
+        display: inline-block;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-bottom: thin solid #dee2e6;
+
+      }
+    }
+  }
+
+  .activetab {
+    background-color: @bgcolor;
+    color: @redcolor !important;
+    border: thin solid #dee2e6;
+
+    border-top-right-radius: 0.5em;
+    border-bottom: none !important;
+  }
 
 </style>

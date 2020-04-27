@@ -24,7 +24,6 @@ a {
   text-decoration: none !important;
 }
 body {
-  background-color: #E5E5E5;
   font-family: 'Exo', sans-serif;
   color: #303030;
 }
@@ -38,6 +37,26 @@ body {
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+#content #side-container {
+  background-color: #FAFAFA;
+}
+#content #side-container .nav-active {
+  color: #e33;
+}
+#content #side-container .nav-active i {
+  color: #e33;
+}
+#content .tabsection {
+  background-color: #FAFAFA;
+  border-top: thin solid #dee2e6;
+}
+#content .tabicon {
+  border-bottom: thin solid #dee2e6;
+}
+#view-container {
+  border-left: thin solid #dee2e6;
+}
+/*Custom Class*/
 .bshadow {
   -webkit-box-shadow: 22px 21px 51px -34px #303030;
   -moz-box-shadow: 22px 21px 51px -34px #303030;

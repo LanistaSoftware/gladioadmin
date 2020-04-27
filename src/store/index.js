@@ -11,17 +11,11 @@ import pigment from './modules/pigmentStore'
 import employe from './modules/employeStore'
 import contact from './modules/contactStore'
 import login from './modules/loginStore'
+import uiElements from './modules/uiElements'
 
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
-  state : {
-      tabs :[{
-          link: '/',
-          label: 'Welcome'
-        },],
-     
-  },
   modules:{
       user,
       blog,
@@ -33,6 +27,7 @@ export const store = new Vuex.Store({
       pigment,
       employe,
       contact,
-      login
+      login,
+      uiElements
   }
 })
