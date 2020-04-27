@@ -1,6 +1,6 @@
 #app {
     display: grid;
-    grid-template-rows: auto auto 5rem;
+    grid-template-rows: auto minmax(83vh, auto) 5rem;
     grid-template-areas:
         "header"
         "content"
@@ -24,29 +24,28 @@
 
 
 #content {
-    background-color: green;
     grid-area: content;
     display: grid;
-    grid-template-rows: 2rem auto;
+    grid-template-rows: 3rem auto;
     grid-template-areas:
         "tabsection"
         "navcontent";
 
     .tabsection {
-        background-color:gray;
         grid-area: tabsection;
         display: grid;
-        grid-template-columns: 2fr 10fr;
+        grid-template-columns: 1fr 8fr;
     }
     .tabs{
         display: grid;
         grid-template-columns: 10fr 2fr;
+        place-content: end;
     }
 
     .nav-content-section {
         grid-area: navcontent;
         display: grid;
-        grid-template-columns: 2fr 10fr;
+        grid-template-columns: 1fr 8fr;
         grid-template-areas: "sidecontainer viewcontainer";
 
         #side-container {

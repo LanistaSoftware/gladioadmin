@@ -1,6 +1,6 @@
 #app {
   display: grid;
-  grid-template-rows: auto auto 5rem;
+  grid-template-rows: auto minmax(83vh, auto) 5rem;
   grid-template-areas: "header" "content" "footer";
 }
 #header {
@@ -16,26 +16,25 @@
   grid-area: heading;
 }
 #content {
-  background-color: green;
   grid-area: content;
   display: grid;
-  grid-template-rows: 2rem auto;
+  grid-template-rows: 3rem auto;
   grid-template-areas: "tabsection" "navcontent";
 }
 #content .tabsection {
-  background-color: gray;
   grid-area: tabsection;
   display: grid;
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 1fr 8fr;
 }
 #content .tabs {
   display: grid;
   grid-template-columns: 10fr 2fr;
+  place-content: end;
 }
 #content .nav-content-section {
   grid-area: navcontent;
   display: grid;
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 1fr 8fr;
   grid-template-areas: "sidecontainer viewcontainer";
 }
 #content .nav-content-section #side-container {

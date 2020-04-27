@@ -1,41 +1,22 @@
 <template>
     <nav class="sidenav">
-        <ul  class="navigation-list">
-            <router-link to='/users' tag='li' class="navigation-item" active-class="act">
-                <span class="nav-icon"><i class="fas fa-users "></i></span> <a class="nav-link active" href="#">Kullanıcılar</a>
-            </router-link>
-            <router-link to='/blogs' tag='li' class="navigation-item" active-class="act">
-                <span class="nav-icon"><i class="fas fa-book-open "></i></span> <a class="nav-link" href="#">Makaleler </a>
-            </router-link>
-            <router-link to='/sliders' tag='li' class="navigation-item" active-class="act">
-                <span class="nav-icon"><i class="fas fa-photo-video "></i></span><a class="nav-link" href="#">Slaytlar </a>
-            </router-link>
-            <router-link to='/videos' tag='li' class="navigation-item" active-class="act">
-                <span class="nav-icon"><i class="fas fa-video "></i></span> <a class="nav-link" href="#">Videolar</a>
-            </router-link>
-            <router-link to='/reference' tag='li' class="navigation-item" active-class="act">
-                <span class="nav-icon"><i class="fas fa-asterisk "></i> </span><a class="nav-link" href="#">Referanslar </a>
-            </router-link>
-            <router-link to='/products' tag='li' class="navigation-item" active-class="act">
-                <span class="nav-icon"><i class="fas fa-boxes "></i></span> <a class="nav-link" href="#">Ürünler </a>
-            </router-link>
-            <router-link to='/sectors' tag='li' class="navigation-item" active-class="act">
-                <span class="nav-icon"><i class="fas fa-bezier-curve "></i></span> <a class="nav-link" href="#">Sektörler </a>
-            </router-link>
-            <router-link to='/aboutus' tag='li' class="navigation-item" active-class="act">
-                <span class="nav-icon"><i class="fas fa-address-card "></i></span> <a class="nav-link" href="#">Hakkımızda </a>
-            </router-link>
-            <router-link to='/employe' tag='li' class="navigation-item" active-class="act">
-                <span class="nav-icon"><i class="fas fa-users "></i></span> <a class="nav-link" href="#">Ekibimiz </a>
-            </router-link>
-            <router-link to='/contact' tag='li' class="navigation-item" active-class="act">
-                <span class="nav-icon"><i class="fas fa-cogs "></i></span><a class="nav-link" href="#">Ayarlar <br></a>
-            </router-link>
+        <ul class="navigation-list">
+            <li v-for="nav in navs" :key="nav.id" :class="nav.tagClass">
+                <router-link :to="nav.to" tag="a" :class="nav.linkClass" :active-class="nav.activeClass" exact>
+                    <span class="nav-icon">
+                        <i :class="nav.iconClass"></i>
+                    </span>
+                    {{nav.linkLabel}}
+                </router-link>
+            </li>
         </ul>
     </nav>
 </template>
 <script>
-export default {   
+export default { 
+    props:[
+        "navs"
+    ]  
 }
 </script>
 <style lang="less" scoped>
@@ -85,13 +66,5 @@ export default {
 
 }
 
-.act {
-
-    a,
-    i {
-        color: @redcolor;
-
-    }
-}
 
 </style>

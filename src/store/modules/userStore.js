@@ -2,15 +2,11 @@
 import api from '../api'
 const state = {
     Users: [],
-    tabs: [],
     password:null,
     oldpass:null,
     editpass:false,
 }
 const getters = {
-    getTabs(state) {
-        return state.tabs;
-    },
     getUser(state) {
         return state.Users;
     },
@@ -43,11 +39,6 @@ const mutations = {
 }
 
 const actions = {
-    addTabs({
-        commit
-    }, tab) {
-        commit("setTabs", tab)
-    },
     getUser({
         commit
     }) {

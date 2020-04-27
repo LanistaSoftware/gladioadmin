@@ -1,14 +1,14 @@
 <template>
-  <ul class="nav nav-tabs" >
-    <p>Tabs bölümü</p>
-    <router-link :to="tab.link" tag="a"  class="nav-link" v-for="tab in tabs" :key="tab.id" active-class="active">
-      {{tab.label}}
-    </router-link>
+  <ul class="tablist">
+    <li v-for="tab in tabs" :key="tab.id" class="tabitem">
+      <router-link :to="tab.link" tag="a" class="tablink" exact-active-class="activetab">
+        {{tab.label}}
+      </router-link>
+    </li>
   </ul>
 </template>
 
 <script>
- import {mapGetters} from 'vuex'
   export default {
     name: 'Tabs',
    
@@ -17,12 +17,9 @@
 
       }
     },
-    computed:{
-      ...mapGetters({
-        tabs:'getTabs'
-      })
-
-    }
+    props:[
+      "tabs"
+    ]
   }
 </script>
 <style lang="less" scoped>
@@ -34,10 +31,14 @@
   @btntextcolor: #eee;
   @headingfont: 'Kanit', sans-serif;
   @contentfont: 'Exo', sans-serif;
-
-  a {
-      color: @nbfcolor;
+.tablist{
+  .tabitem{
+    float: left;
+    padding-right:1rem;
   }
-
+}
+.activetab{
+  color:red;
+}
 
 </style>

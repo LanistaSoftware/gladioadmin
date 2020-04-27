@@ -24,7 +24,6 @@ a {
   text-decoration: none !important;
 }
 body {
-  background-color: #E5E5E5;
   font-family: 'Exo', sans-serif;
   color: #303030;
 }
@@ -37,6 +36,20 @@ body {
 }
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+#content #side-container {
+  background-color: #FAFAFA;
+  border-right: thin solid #dee2e6;
+}
+#content #side-container .nav-active {
+  color: red;
+}
+#content .tabsection {
+  background-color: #FAFAFA;
+  border-top: thin solid #dee2e6;
+}
+#content .tabsection .tabs {
+  border-bottom: thin solid #dee2e6;
 }
 .bshadow {
   -webkit-box-shadow: 22px 21px 51px -34px #303030;

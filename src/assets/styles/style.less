@@ -7,6 +7,7 @@
 @headingfont: 'Kanit', sans-serif;
 @contentfont: 'Exo', sans-serif;
 @btntextcolor: #eee;
+@bordercolor:#dee2e6;
 
 * {
   margin: 0;
@@ -39,7 +40,6 @@ a {
 }
 
 body {
-  background-color: @pagebgcolor;
   font-family: @contentfont;
   color: @nbfcolor;
 }
@@ -53,6 +53,22 @@ body {
 
     &.router-link-exact-active {
       color: #42b983;
+    }
+  }
+}
+#content{
+  #side-container {
+    background-color: @sidebgcolor;
+    border-right: thin solid @bordercolor;
+    .nav-active{
+      color:red;
+    }
+  }
+  .tabsection{
+    background-color:@sidebgcolor;
+    border-top: thin solid @bordercolor;
+    .tabs{
+      border-bottom: thin solid @bordercolor;
     }
   }
 }
