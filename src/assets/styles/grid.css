@@ -1,0 +1,52 @@
+#app {
+  display: grid;
+  grid-template-rows: auto auto 5rem;
+  grid-template-areas: "header" "content" "footer";
+}
+#header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas: "logo heading";
+}
+#header .logo {
+  grid-area: logo;
+}
+#header .heading {
+  grid-area: heading;
+}
+#content {
+  background-color: green;
+  grid-area: content;
+  display: grid;
+  grid-template-rows: 2rem auto;
+  grid-template-areas: "tabsection" "navcontent";
+}
+#content .tabsection {
+  background-color: gray;
+  grid-area: tabsection;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+#content .tabs {
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+}
+#content .nav-content-section {
+  grid-area: navcontent;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas: "sidecontainer viewcontainer";
+}
+#content .nav-content-section #side-container {
+  grid-area: sidecontainer;
+  display: grid;
+}
+#content .nav-content-section #view-container {
+  grid-area: viewcontainer;
+}
+#footer {
+  background-color: blue;
+  grid-area: footer;
+  display: grid;
+}
