@@ -18,7 +18,7 @@
 #content {
   grid-area: content;
   display: grid;
-  grid-template-rows: 3rem auto;
+  grid-template-rows: 40px auto;
   grid-template-areas: "tabsection" "navcontent";
 }
 #content .tabsection {

@@ -1,11 +1,20 @@
 const state = {
-    tabs: [{
+    tabs: [
+        {
             link: '/blogs',
             label: 'Makaleler'
         },
         {
-            link: '/addblog',
+            link: '/blogs/addblog',
             label: 'Makale Ekle'
+        },
+        {
+            link: '/blogs/bloglist',
+            label: 'Makkale Listesi'
+        },
+        {
+            link: '/blogs/deleteblog',
+            label: 'Makale Sil'
         }
     ],
     navs: [{

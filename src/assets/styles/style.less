@@ -59,20 +59,29 @@ body {
 #content{
   #side-container {
     background-color: @sidebgcolor;
-    border-right: thin solid @bordercolor;
+   
     .nav-active{
-      color:red;
+      color:@redcolor;
+      i{
+        color: @redcolor;
+      }
     }
   }
+
   .tabsection{
     background-color:@sidebgcolor;
     border-top: thin solid @bordercolor;
-    .tabs{
-      border-bottom: thin solid @bordercolor;
-    }
+
+  }
+  .tabicon{
+    border-bottom: thin solid @bordercolor;
   }
 }
+#view-container {
+  border-left: thin solid @bordercolor;
+}
 
+/*Custom Class*/
 .bshadow {
   -webkit-box-shadow: 22px 21px 51px -34px rgba(48,48,48,1);
   -moz-box-shadow: 22px 21px 51px -34px rgba(48,48,48,1);

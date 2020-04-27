@@ -31,7 +31,7 @@ export default {
 @btntextcolor: #eee;
 
 .sidenav {
-    padding: 1rem 4rem 1rem 1rem;
+    padding: 1rem 2rem 1rem 1rem;
 }
 
 .navigation-item {

@@ -39,18 +39,24 @@ body {
 }
 #content #side-container {
   background-color: #FAFAFA;
-  border-right: thin solid #dee2e6;
 }
 #content #side-container .nav-active {
-  color: red;
+  color: #e33;
+}
+#content #side-container .nav-active i {
+  color: #e33;
 }
 #content .tabsection {
   background-color: #FAFAFA;
   border-top: thin solid #dee2e6;
 }
-#content .tabsection .tabs {
+#content .tabicon {
   border-bottom: thin solid #dee2e6;
 }
+#view-container {
+  border-left: thin solid #dee2e6;
+}
+/*Custom Class*/
 .bshadow {
   -webkit-box-shadow: 22px 21px 51px -34px #303030;
   -moz-box-shadow: 22px 21px 51px -34px #303030;

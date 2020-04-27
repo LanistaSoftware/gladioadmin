@@ -20,7 +20,7 @@ export default {
 
 <style lang="less" scoped>
 .logo{
-    place-items: center;
+    align-self: center;
     padding: 1rem;
     img{
         width: 90%;
