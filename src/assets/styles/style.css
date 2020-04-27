@@ -4,9 +4,24 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 12px;
+  font-size: 10px;
   background-color: #E5E5E5;
   font-family: 'Exo', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Kanit', sans-serif;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
 }
 body {
   background-color: #E5E5E5;
@@ -22,4 +37,9 @@ body {
 }
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+.bshadow {
+  -webkit-box-shadow: 22px 21px 51px -34px #303030;
+  -moz-box-shadow: 22px 21px 51px -34px #303030;
+  box-shadow: 22px 21px 51px -34px #303030;
 }
