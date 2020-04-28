@@ -2,7 +2,7 @@
 <div class="tab-container">
   <ul class="tablist">
     <li v-for="tab in tabs" :key="tab.id" class="tabitem" active-class="activetab">
-      <router-link :to="tab.link" tag="a" class="tablink" active-class="activetab" exact>
+      <router-link :to="tab.link" tag="a" class="tablink" active-class="activetab">
         {{tab.label}}
       </router-link>
     </li>

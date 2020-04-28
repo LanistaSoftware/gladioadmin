@@ -18,7 +18,6 @@
 html {
   font-size: 10px;
   background-color: @pagebgcolor;
-  font-family: @contentfont;
 }
 
 h1,
@@ -28,6 +27,7 @@ h4,
 h5,
 h6 {
   font-family: @headingfont;
+  font-weight: 600;
 }
 
 ul,
@@ -40,7 +40,8 @@ a {
 }
 
 body {
-  font-family: @contentfont;
+  font-family:@contentfont;
+  font-weight: 600;
   color: @nbfcolor;
 }
 
@@ -79,6 +80,11 @@ body {
 }
 #view-container {
   border-left: thin solid @bordercolor;
+}
+
+#footer{
+  background-color:@nbfcolor;
+  color: @incolor;
 }
 
 /*Custom Class*/

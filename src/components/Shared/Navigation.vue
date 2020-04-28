@@ -2,7 +2,7 @@
     <nav class="sidenav">
         <ul class="navigation-list">
             <li v-for="nav in navs" :key="nav.id" :class="nav.tagClass">
-                <router-link :to="nav.to" tag="a" :class="nav.linkClass" :active-class="nav.activeClass" exact>
+                <router-link :to="nav.to" tag="a" :class="nav.linkClass" :active-class="nav.activeClass">
                     <span class="nav-icon">
                         <i :class="nav.iconClass"></i>
                     </span>

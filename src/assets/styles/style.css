@@ -6,7 +6,6 @@
 html {
   font-size: 10px;
   background-color: #E5E5E5;
-  font-family: 'Exo', sans-serif;
 }
 h1,
 h2,
@@ -15,6 +14,7 @@ h4,
 h5,
 h6 {
   font-family: 'Kanit', sans-serif;
+  font-weight: 600;
 }
 ul,
 li {
@@ -25,6 +25,7 @@ a {
 }
 body {
   font-family: 'Exo', sans-serif;
+  font-weight: 600;
   color: #303030;
 }
 #nav {
@@ -55,6 +56,10 @@ body {
 }
 #view-container {
   border-left: thin solid #dee2e6;
+}
+#footer {
+  background-color: #303030;
+  color: #B5B5B5;
 }
 /*Custom Class*/
 .bshadow {

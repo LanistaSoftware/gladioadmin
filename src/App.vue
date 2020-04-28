@@ -19,20 +19,22 @@
       </section>
     </div>
     <div id="footer">
-      <h3>Footer</h3>
+      <Footer-v />
     </div>
   </div>
 </template>
 <script>
 import Header from "./components/Shared/Header.vue"
 import Navigation from "./components/Shared/Navigation.vue"
+import FooterV from "./components/Shared/FooterV.vue"
 import Tabs from "./components/Shared/Tabs.vue"
 import { mapGetters } from 'vuex'
 export default {
   components: {
       Header,
       Navigation,
-      Tabs
+      Tabs,
+      FooterV
     },
     data() {
       return {
@@ -50,6 +52,7 @@ export default {
 </script>
 
 <style lang="less">
+// @import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;300;400;600;700;900&family=Kanit:wght@100;300;400;600;700;900&display=swap');
 @import url("./assets/styles/bootstrap/css/bootstrap.css");
 @import url("./assets/styles/fontawesome/css/all.css");
 @import url("./assets/styles/style.css");
