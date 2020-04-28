@@ -2,6 +2,10 @@
 @bgcolor: #ffffff;
 @incolor: #B5B5B5;
 @redcolor: #e33;
+@primarycolor: #031d44;
+@infocolor:#9AD1D4;
+@successcolor:#0d5d56;
+@warningcolor:#FFD275;
 @pagebgcolor: #E5E5E5;
 @sidebgcolor: #FAFAFA;
 @headingfont: 'Kanit', sans-serif;
@@ -41,7 +45,6 @@ a {
 
 body {
   font-family:@contentfont;
-  font-weight: 600;
   color: @nbfcolor;
 }
 
@@ -83,13 +86,65 @@ body {
 }
 
 #footer{
+  border-top: thin solid @bordercolor;
   background-color:@nbfcolor;
   color: @incolor;
 }
 
 /*Custom Class*/
+
 .bshadow {
   -webkit-box-shadow: 22px 21px 51px -34px rgba(48,48,48,1);
   -moz-box-shadow: 22px 21px 51px -34px rgba(48,48,48,1);
   box-shadow: 22px 21px 51px -34px rgba(48,48,48,1);
+}
+
+/***  Custom Buttton  ***/
+.btn{
+  font-weight: 600;
+}
+.c-primary {
+    color: #fff;
+    background-color: @primarycolor;
+    border-color: @primarycolor;
+}
+.c-secondary {
+  color: #fff;
+  background-color: @incolor;
+  border-color: @incolor;
+}
+.c-success {
+  color: #fff;
+  background-color: @successcolor;
+  border-color: @successcolor;
+}
+.c-danger {
+  color: #fff;
+  background-color: @redcolor;
+  border-color: @redcolor;
+}
+.c-warning {
+  color: @nbfcolor;
+  background-color: @warningcolor;
+  border-color: @warningcolor;
+}
+.c-info {
+  color: @nbfcolor;
+  background-color: @infocolor;
+  border-color: @infocolor;
+}
+.c-light {
+  color: @nbfcolor;
+  background-color: @incolor;
+  border-color: @incolor;
+}
+.c-dark {
+  color: #fff;
+  background-color: @nbfcolor;
+  border-color: @nbfcolor;
+}
+.c-link {
+  font-weight: 400;
+  color: @primarycolor;
+  text-decoration: none;
 }

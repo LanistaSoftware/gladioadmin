@@ -25,7 +25,6 @@ a {
 }
 body {
   font-family: 'Exo', sans-serif;
-  font-weight: 600;
   color: #303030;
 }
 #nav {
@@ -58,6 +57,7 @@ body {
   border-left: thin solid #dee2e6;
 }
 #footer {
+  border-top: thin solid #dee2e6;
   background-color: #303030;
   color: #B5B5B5;
 }
@@ -66,4 +66,53 @@ body {
   -webkit-box-shadow: 22px 21px 51px -34px #303030;
   -moz-box-shadow: 22px 21px 51px -34px #303030;
   box-shadow: 22px 21px 51px -34px #303030;
+}
+/***  Custom Buttton  ***/
+.btn {
+  font-weight: 600;
+}
+.c-primary {
+  color: #fff;
+  background-color: #031d44;
+  border-color: #031d44;
+}
+.c-secondary {
+  color: #fff;
+  background-color: #B5B5B5;
+  border-color: #B5B5B5;
+}
+.c-success {
+  color: #fff;
+  background-color: #0d5d56;
+  border-color: #0d5d56;
+}
+.c-danger {
+  color: #fff;
+  background-color: #e33;
+  border-color: #e33;
+}
+.c-warning {
+  color: #303030;
+  background-color: #FFD275;
+  border-color: #FFD275;
+}
+.c-info {
+  color: #303030;
+  background-color: #9AD1D4;
+  border-color: #9AD1D4;
+}
+.c-light {
+  color: #303030;
+  background-color: #B5B5B5;
+  border-color: #B5B5B5;
+}
+.c-dark {
+  color: #fff;
+  background-color: #303030;
+  border-color: #303030;
+}
+.c-link {
+  font-weight: 400;
+  color: #031d44;
+  text-decoration: none;
 }

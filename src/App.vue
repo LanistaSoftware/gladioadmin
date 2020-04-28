@@ -6,7 +6,7 @@
         <div class="spacing"></div>
         <div class="tabs">
           <div class="tab"><Tabs :tabs="getTabs" /></div>
-          <div class="tabicon">Icons</div>
+          <div class="tabicon"><IconSet /></div>
           </div>
       </section>
       <section class="nav-content-section">
@@ -28,13 +28,15 @@ import Header from "./components/Shared/Header.vue"
 import Navigation from "./components/Shared/Navigation.vue"
 import FooterV from "./components/Shared/FooterV.vue"
 import Tabs from "./components/Shared/Tabs.vue"
+import IconSet from "./components/Shared/IconSet.vue"
 import { mapGetters } from 'vuex'
 export default {
   components: {
       Header,
       Navigation,
       Tabs,
-      FooterV
+      FooterV,
+      IconSet
     },
     data() {
       return {
