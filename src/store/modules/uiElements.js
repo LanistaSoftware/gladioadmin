@@ -5,16 +5,8 @@ const state = {
             label: 'Makaleler'
         },
         {
-            link: '/blogs/addblog',
+            link: '/blogs/AddBlog',
             label: 'Makale Ekle'
-        },
-        {
-            link: '/blogs/bloglist',
-            label: 'Makkale Listesi'
-        },
-        {
-            link: '/blogs/deleteblog',
-            label: 'Makale Sil'
         }
     ],
     navs: [{

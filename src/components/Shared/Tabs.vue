@@ -1,8 +1,8 @@
 <template>
 <div class="tab-container">
   <ul class="tablist">
-    <li v-for="tab in tabs" :key="tab.id" class="tabitem" active-class="activetab">
-      <router-link :to="tab.link" tag="a" class="tablink" active-class="activetab">
+    <li v-for="tab in tabs" :key="tab.id" class="tabitem" exact-active-class="activetab">
+      <router-link :to="tab.link" tag="a" class="tablink" exact-active-class="activetab">
         {{tab.label}}
       </router-link>
     </li>
