@@ -5,7 +5,7 @@
       <section class="tabsection">
         <div class="spacing"></div>
         <div class="tabs">
-          <div class="tab"><Tabs :tabs="getTabs" /></div>
+          <div class="tab"><Tabs :tabs="tabs" /></div>
           <div class="tabicon"><IconSet /></div>
           </div>
       </section>
@@ -24,12 +24,16 @@
   </div>
 </template>
 <script>
-import Header from "./components/Shared/Header.vue"
-import Navigation from "./components/Shared/Navigation.vue"
-import FooterV from "./components/Shared/FooterV.vue"
-import Tabs from "./components/Shared/Tabs.vue"
-import IconSet from "./components/Shared/IconSet.vue"
-import { mapGetters } from 'vuex'
+import Header from "./components/shared/Header.vue"
+import Navigation from "./components/shared/Navigation.vue"
+import FooterV from "./components/shared/FooterV.vue"
+import Tabs from "./components/shared/Tabs.vue"
+import IconSet from "./components/shared/IconSet.vue"
+import {
+
+    mapGetters
+
+} from 'vuex'
 export default {
   components: {
       Header,
@@ -38,19 +42,25 @@ export default {
       FooterV,
       IconSet
     },
-    data() {
-      return {
-
-      }
-    },
     computed: {
       ...mapGetters({
         getTabs: "getTabs",
         getNavs: "getNavs"
-      }),
+      })
+    },
 
-    }
-}
+    data() {
+      return {
+        tabs: []
+      }
+    },
+    watch: {
+      getTabs() {
+        this.tabs = this.getTabs
+      }
+    },
+
+  }
 </script>
 
 <style lang="less">

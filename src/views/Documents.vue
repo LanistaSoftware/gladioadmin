@@ -1,20 +1,22 @@
 <template>
-  <div class="teams">
+  <div class="documents">
+    <router-view />
   </div>
 </template>
 
 <script>
+// @ is an alias to /src
 import {
   setTabMixins
 } from '../mixins/setTabMixins'
-export default {
-  name: 'Teams',
-  components: {
 
+export default {
+  name: 'Documents',
+  components: {
   },
   mixins:[setTabMixins],
-      created() {
-    this.setTabs(this.getTabList.teams)
+    created() {
+    this.setTabs(this.getTabList.documents)
   }
 }
 </script>

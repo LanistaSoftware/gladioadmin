@@ -1,9 +1,9 @@
 <template>
-    <h1>AddBlog</h1>
+    <h1> DocumentList</h1>
 </template>
 <script>
 export default {
-    name:"AddBlog"
+    name:"DocumentList"
 }
 </script>
 <style lang="less" scoped>

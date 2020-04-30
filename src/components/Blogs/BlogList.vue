@@ -1,11 +1,11 @@
 <template>
-    <h1>AddBlog</h1>
+    <h1>BlogList</h1>
 </template>
 <script>
 export default {
-    name:"AddBlog"
+    name:"BlogList"
 }
 </script>
 <style lang="less" scoped>
 
-</style>
+</style>BlogList

@@ -1,14 +1,7 @@
+import tabList from '../../uiconfig/tabconfig.json'
 const state = {
-    tabs: [
-        {
-            link: '/blogs',
-            label: 'Makaleler'
-        },
-        {
-            link: '/blogs/AddBlog',
-            label: 'Makale Ekle'
-        }
-    ],
+    tabs:[],
+    tabList:tabList,
     navs: [{
             to: '/users',
             tag: 'li',
@@ -100,6 +93,16 @@ const state = {
             linkLabel: 'Hakkımızda'
         },
         {
+            to: '/documents',
+            tag: 'li',
+            tagClass: 'navigation-item',
+            activeClass: 'nav-active',
+            iconSpanClass: 'nav-icon',
+            iconClass: 'fas fa-file-pdf',
+            linkClass: 'nav-link',
+            linkLabel: 'Hakkımızda'
+        },
+        {
             to: '/teams',
             tag: 'li',
             tagClass: 'navigation-item',
@@ -126,13 +129,18 @@ const getters = {
     getTabs(state) {
         return state.tabs;
     },
+    getTabList(state) {
+        return state.tabList;
+    },
     getNavs(state) {
         return state.navs;
     }
 }
 const mutations = {
     setTabs(state, tab) {
-        return state.tabs = tab
+        let tabs = []
+        tabs = tab
+        return state.tabs = tabs
     },
     setNavs(state, tab) {
         return state.navs = tab

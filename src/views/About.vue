@@ -5,9 +5,15 @@
 </template>
 
 <script>
+import {
+  setTabMixins
+} from '../mixins/setTabMixins'
 export default {
   name: 'About',
-  components: {
+  mixins:[setTabMixins],
+  created() {
+    this.setTabs(this.getTabList.about)
   }
+
 }
 </script>
