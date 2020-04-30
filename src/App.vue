@@ -14,7 +14,9 @@
           <Navigation :navs="getNavs"/>
         </div>
         <div id="view-container">
+
           <router-view />
+
         </div>
       </section>
     </div>
@@ -60,4 +62,5 @@ export default {
 @import url("./assets/styles/style.css");
 @import url("./assets/styles/grid.css");
 @import url("./assets/styles/media.css");
+@import url("./assets/styles/animation.css");
 </style>

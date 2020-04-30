@@ -46,20 +46,9 @@ a {
 body {
   font-family:@contentfont;
   color: @nbfcolor;
+  font-size:1.1rem;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 #content{
   #side-container {
     background-color: @sidebgcolor;
@@ -79,10 +68,12 @@ body {
   }
   .tabicon{
     border-bottom: thin solid @bordercolor;
+    align-self: flex-end;
   }
 }
 #view-container {
   border-left: thin solid @bordercolor;
+  padding: 1rem;
 }
 
 #footer{
@@ -102,6 +93,7 @@ body {
 /***  Custom Buttton  ***/
 .btn{
   font-weight: 600;
+  font-size: 1.1rem;
 }
 .c-primary {
     color: #fff;

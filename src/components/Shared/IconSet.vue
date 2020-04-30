@@ -1,10 +1,9 @@
 <template>
 <div class="icon-container">
     <ul class="icon-list">
-        <li class="icon-list-item"><button class="btn btn-sm btn-danger"><i class="fas fa-info"></i></button></li>
-        <li class="icon-list-item"><button class="btn btn-sm btn-danger"><i class="fas fa-info"></i></button></li>
-        <li class="icon-list-item"><button class="btn btn-sm btn-danger"><i class="fas fa-info"></i></button></li>
-        <li class="icon-list-item"><button class="btn btn-sm btn-danger"><i class="fas fa-info"></i></button></li>
+        <li class="icon-list-item"><button class="btn btn-primary"><i class="fas fa-home"></i></button></li>
+        <li class="icon-list-item"><button class="btn btn-primary"><i class="fas fa-cogs"></i></button></li>
+        <li class="icon-list-item"><button class="btn btn-danger"><i class="fas fa-sign-out-alt"></i></button></li>
     </ul>
 </div>
 
@@ -18,14 +17,16 @@ export default {
 .icon-container {
     display: grid;
     grid-template-columns: fit-content(80%) auto;
-    align-content: end;
+    place-content:end;
+
 
     .icon-list {
-
-
+        margin-bottom: 0;
         .icon-list-item {
-
-            float: left;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+            padding-right: 0.5rem;
+        
         }
     }
 }

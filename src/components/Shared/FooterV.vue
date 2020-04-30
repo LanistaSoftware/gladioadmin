@@ -1,7 +1,7 @@
 <template>
     <footer>
         <section><h3>Lanista Software</h3></section>
-        <section><img src="hashtag.png" alt="Footer Icon"></section>
+        <section><img src="/hashtag.png" alt="Footer Icon"></section>
     </footer>
 </template>
 <script>

@@ -26,16 +26,7 @@ a {
 body {
   font-family: 'Exo', sans-serif;
   color: #303030;
-}
-#nav {
-  padding: 30px;
-}
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-#nav a.router-link-exact-active {
-  color: #42b983;
+  font-size: 1.1rem;
 }
 #content #side-container {
   background-color: #FAFAFA;
@@ -52,9 +43,11 @@ body {
 }
 #content .tabicon {
   border-bottom: thin solid #dee2e6;
+  align-self: flex-end;
 }
 #view-container {
   border-left: thin solid #dee2e6;
+  padding: 1rem;
 }
 #footer {
   border-top: thin solid #dee2e6;
@@ -70,6 +63,7 @@ body {
 /***  Custom Buttton  ***/
 .btn {
   font-weight: 600;
+  font-size: 1.1rem;
 }
 .c-primary {
   color: #fff;
