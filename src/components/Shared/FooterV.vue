@@ -16,13 +16,13 @@ footer{
     grid-template-columns: 50% 50%;
 
     section:last-child{
-
+        width: 100%;
         display:grid;
         place-items: end;
         
         img{
-            width: 6%;
-            height: auto;
+            height: 100%;
+            width: auto;
         }
     }
 }
