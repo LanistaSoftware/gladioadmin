@@ -6,7 +6,6 @@
 html {
   font-size: 10px;
   background-color: #E5E5E5;
-  font-family: 'Exo', sans-serif;
 }
 h1,
 h2,
@@ -15,6 +14,7 @@ h4,
 h5,
 h6 {
   font-family: 'Kanit', sans-serif;
+  font-weight: 600;
 }
 ul,
 li {
@@ -26,16 +26,7 @@ a {
 body {
   font-family: 'Exo', sans-serif;
   color: #303030;
-}
-#nav {
-  padding: 30px;
-}
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-#nav a.router-link-exact-active {
-  color: #42b983;
+  font-size: 1.1rem;
 }
 #content #side-container {
   background-color: #FAFAFA;
@@ -52,13 +43,70 @@ body {
 }
 #content .tabicon {
   border-bottom: thin solid #dee2e6;
+  align-self: flex-end;
 }
 #view-container {
   border-left: thin solid #dee2e6;
+  padding: 1rem;
+}
+#footer {
+  border-top: thin solid #dee2e6;
+  background-color: #303030;
+  color: #B5B5B5;
 }
 /*Custom Class*/
 .bshadow {
   -webkit-box-shadow: 22px 21px 51px -34px #303030;
   -moz-box-shadow: 22px 21px 51px -34px #303030;
   box-shadow: 22px 21px 51px -34px #303030;
+}
+/***  Custom Buttton  ***/
+.btn {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.c-primary {
+  color: #fff;
+  background-color: #031d44;
+  border-color: #031d44;
+}
+.c-secondary {
+  color: #fff;
+  background-color: #B5B5B5;
+  border-color: #B5B5B5;
+}
+.c-success {
+  color: #fff;
+  background-color: #0d5d56;
+  border-color: #0d5d56;
+}
+.c-danger {
+  color: #fff;
+  background-color: #e33;
+  border-color: #e33;
+}
+.c-warning {
+  color: #303030;
+  background-color: #FFD275;
+  border-color: #FFD275;
+}
+.c-info {
+  color: #303030;
+  background-color: #9AD1D4;
+  border-color: #9AD1D4;
+}
+.c-light {
+  color: #303030;
+  background-color: #B5B5B5;
+  border-color: #B5B5B5;
+}
+.c-dark {
+  color: #fff;
+  background-color: #303030;
+  border-color: #303030;
+}
+.c-link {
+  font-weight: 400;
+  color: #031d44;
+  text-decoration: none;
 }

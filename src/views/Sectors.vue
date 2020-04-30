@@ -1,18 +1,21 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="sectors">
+    <router-view />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import {
+  setTabMixins
+} from '../mixins/setTabMixins'
 export default {
   name: 'Sectors',
   components: {
-    HelloWorld
+
+  },
+  mixins:[setTabMixins],
+      created() {
+    this.setTabs(this.getTabList.sectors)
   }
 }
 </script>

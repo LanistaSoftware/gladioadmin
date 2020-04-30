@@ -3,11 +3,15 @@ import api from '../api'
 
 const state = {
   isLogined:false,
-  token:'',
+  token:'',  
+  authorization: null
 }
 const getters = {
     getLogin(state) {
         return state.token !== ""
+    },
+    getAuth(state) {
+        return state.authorization
     }
 
 }
@@ -20,6 +24,9 @@ const mutations = {
      },
      clearToken(state){
         state.token = ""
+    },
+    setAuth(state, auth) {
+        return state.authorization = auth
     }
 }
 
@@ -54,7 +61,21 @@ const actions = {
         }).catch(err => {
             alert(err.message)
         })
-    }
+    },
+    // getAuth({
+    //     commit
+    // }) {
+    //     {
+    //         return api().get('/user').then(res => {
+    //             let users = [];
+    //             users = res.data.users
+
+    //             commit("setUser", users)
+    //         }).catch(err => {
+    //             alert(err)
+    //         })
+    //     }
+    // }
 }
 export default {
     state,

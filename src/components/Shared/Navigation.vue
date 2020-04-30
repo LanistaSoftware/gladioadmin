@@ -2,11 +2,11 @@
     <nav class="sidenav">
         <ul class="navigation-list">
             <li v-for="nav in navs" :key="nav.id" :class="nav.tagClass">
-                <router-link :to="nav.to" tag="a" :class="nav.linkClass" :active-class="nav.activeClass" exact>
+                <router-link :to="nav.to" tag="a" :class="nav.linkClass" :active-class="nav.activeClass">
                     <span class="nav-icon">
                         <i :class="nav.iconClass"></i>
                     </span>
-                    {{nav.linkLabel}}
+                    <span class="nav-label">{{nav.linkLabel}}</span>
                 </router-link>
             </li>
         </ul>
@@ -67,4 +67,23 @@ export default {
 }
 
 
+
+@keyframes showw {
+from{
+    
+    transform: scaleX(10px);
+
+}
+to{
+    
+    transform: scaleX(5px);
+}
+}
+
+.nav-label{
+    transform: scaleX(10px);
+    animation-name: showw;
+    animation-duration: 4s;
+
+}
 </style>

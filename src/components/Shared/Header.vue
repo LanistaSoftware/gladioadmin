@@ -23,7 +23,7 @@ export default {
     align-self: center;
     padding: 1rem;
     img{
-        width: 90%;
+        width: 70%;
 
     }
 }

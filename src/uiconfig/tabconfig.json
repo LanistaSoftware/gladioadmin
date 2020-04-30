@@ -1,0 +1,84 @@
+{
+    "about": [{
+        "link": "/about",
+        "label": "Hakkımızda"
+    }],
+    "blogs": [{
+            "link": "/blogs",
+            "label": "Makaleler"
+        },
+        {
+            "link": "/blogs/addblog",
+            "label": "Ekle"
+        }
+    ],
+    "contact": [{
+        "link": "/contact",
+        "label": "İletişim"
+    }],
+    "documents": [{
+            "link": "/documents",
+            "label": "Belgeler"
+        },
+        {
+            "link": "/documents/adddocument",
+            "label": "Ekle"
+        }
+    ],
+    "products": [{
+        "link": "/products",
+        "label": "Ürünler"
+    }],
+    "references": [{
+            "link": "/references",
+            "label": "Referanslar"
+        },
+        {
+            "link": "/references/addreference",
+            "label": "Ekle"
+        }
+    ],
+    "sectors": [{
+            "link": "/sectors",
+            "label": "Sektörler"
+        },
+        {
+            "link": "/sectors/sectorgalery",
+            "label": "Galeri"
+        }
+    ],
+    "settings": [{
+            "link": "/settings/",
+            "label": "Bilgiler"
+        },
+        {
+            "link": "/settings/companylogo",
+            "label": "Logolar"
+        }
+    ],
+    "sliders": [{
+            "link": "/sliders",
+            "label": "Slaytlar"
+        },
+        {
+            "link": "/sliders/editslide",
+            "label": "Düzenle"
+        }
+    ],
+    "teams": [{
+        "link": "/teams",
+        "label": "Ekibimiz"
+    },
+     {
+        "link": "/teams/addemployee",
+        "label": "Ekle"
+    }],
+    "users": [{
+        "link": "/users",
+        "label": "Kullanıcılar"
+    }],
+    "videos": [{
+        "link": "/videos",
+        "label": "Videolar"
+    }]
+}
