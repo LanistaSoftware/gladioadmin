@@ -1,9 +1,21 @@
 <template>
 <div class="icon-container">
     <ul class="icon-list">
-        <li class="icon-list-item"><button class="btn btn-primary"><i class="fas fa-home"></i></button></li>
-        <li class="icon-list-item"><button class="btn btn-primary"><i class="fas fa-cogs"></i></button></li>
-        <li class="icon-list-item"><button class="btn btn-danger"><i class="fas fa-sign-out-alt"></i></button></li>
+        <li class="icon-list-item">
+            <router-link to="/" tag="a" class="link primary" exact-active-class="link danger">
+                <i class="fas fa-home"></i>
+            </router-link>
+        </li>
+        <li class="icon-list-item">
+            <router-link to="/settings" tag="a" class="link primary" exact-active-class="link danger">
+                <i class="fas fa-cogs"></i>
+            </router-link>
+        </li>
+        <li class="icon-list-item">
+            <router-link to="/login" tag="a" class="link success" exact-active-class="link danger">
+                <i class="fas fa-sign-out-alt"></i>
+            </router-link>
+        </li>
     </ul>
 </div>
 

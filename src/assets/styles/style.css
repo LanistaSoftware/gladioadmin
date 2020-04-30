@@ -60,53 +60,107 @@ body {
   -moz-box-shadow: 22px 21px 51px -34px #303030;
   box-shadow: 22px 21px 51px -34px #303030;
 }
-/***  Custom Buttton  ***/
+/***  Custom Text Colors  ***/
+.primary {
+  color: #031d44;
+}
+.secondary {
+  color: #B5B5B5;
+}
+.success {
+  color: #0d5d56;
+}
+.danger {
+  color: #e33;
+}
+.warning {
+  color: #FFD275;
+}
+.info {
+  color: #9AD1D4;
+}
+.light {
+  color: #B5B5B5;
+}
+.dark {
+  color: #303030;
+}
+/***  Custom Buttton Color  ***/
 .btn {
   font-weight: 600;
   font-size: 1.1rem;
 }
-.c-primary {
+.btn-primary {
   color: #fff;
   background-color: #031d44;
   border-color: #031d44;
 }
-.c-secondary {
+.btn-secondary {
   color: #fff;
   background-color: #B5B5B5;
   border-color: #B5B5B5;
 }
-.c-success {
+.btn-success {
   color: #fff;
   background-color: #0d5d56;
   border-color: #0d5d56;
 }
-.c-danger {
+.btn-danger {
   color: #fff;
   background-color: #e33;
   border-color: #e33;
 }
-.c-warning {
+.btn-warning {
   color: #303030;
   background-color: #FFD275;
   border-color: #FFD275;
 }
-.c-info {
+.btn-info {
   color: #303030;
   background-color: #9AD1D4;
   border-color: #9AD1D4;
 }
-.c-light {
+.btn-light {
   color: #303030;
   background-color: #B5B5B5;
   border-color: #B5B5B5;
 }
-.c-dark {
+.btn-dark {
   color: #fff;
   background-color: #303030;
   border-color: #303030;
 }
-.c-link {
+.btn-link {
   font-weight: 400;
   color: #031d44;
   text-decoration: none;
+}
+/***  Custom Background Color  ***/
+.bg-primary {
+  background-color: #031d44;
+}
+.bg-secondary {
+  background-color: #B5B5B5;
+}
+.bg-success {
+  background-color: #0d5d56;
+}
+.bg-danger {
+  background-color: #e33;
+}
+.bg-warning {
+  background-color: #FFD275;
+}
+.bg-info {
+  background-color: #9AD1D4;
+}
+.bg-light {
+  background-color: #B5B5B5;
+}
+.bg-dark {
+  background-color: #303030;
+}
+/**** Link Syle ****/
+.link {
+  font-size: 1.3rem;
 }

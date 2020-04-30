@@ -10,12 +10,10 @@ import {
 } from '../mixins/setTabMixins'
 export default {
   name: 'Products',
-  components: {
-  },
+  components: {},
 
-  mixins:[setTabMixins]
-  ,
-      created() {
+  mixins: [setTabMixins],
+  created() {
     this.setTabs(this.getTabList.products)
   }
 }

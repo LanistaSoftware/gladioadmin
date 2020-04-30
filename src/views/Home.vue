@@ -5,11 +5,23 @@
 </template>
 
 <script>
-
+import {
+  setTabMixins
+} from '../mixins/setTabMixins'
 export default {
   name: 'Home',
   components: {
 
+  },
+    mixins: [setTabMixins],
+  created() {
+    let homeTab = [
+      {
+        link:"/",
+        label:"Ana Sayfa"
+      }
+    ]
+    this.setTabs(homeTab)
   }
 }
 </script>
