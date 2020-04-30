@@ -148,13 +148,13 @@ const routes = [{
     path: '/sliders',
     name: 'Sliders',
     children: [{
-        path: '/sliders/addslides',
+        path: '/sliders',
         name: 'AddSlides',
         component: () => import( /* webpackChunkName: "about" */ '../components/sliders/AddSlides.vue')
 
       },
       {
-        path: '/sliders/editslides',
+        path: '/sliders/editslide',
         name: 'EditSlides',
         component: () => import( /* webpackChunkName: "about" */ '../components/sliders/EditSlide.vue')
 

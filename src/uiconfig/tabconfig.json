@@ -8,7 +8,7 @@
             "label": "Makaleler"
         },
         {
-            "link": "/addblog",
+            "link": "/blogs/addblog",
             "label": "Ekle"
         }
     ],
@@ -34,21 +34,21 @@
             "label": "Referanslar"
         },
         {
-            "link": "/references/referncelist",
-            "label": "Referanslar"
+            "link": "/references/addreference",
+            "label": "Ekle"
         }
     ],
     "sectors": [{
-            "link": "/references",
+            "link": "/sectors",
             "label": "Sektörler"
         },
         {
-            "link": "/references/sectorgalery",
+            "link": "/sectors/sectorgalery",
             "label": "Galeri"
         }
     ],
     "settings": [{
-            "link": "/settings/companyinfo",
+            "link": "/settings/",
             "label": "Bilgiler"
         },
         {
@@ -61,7 +61,7 @@
             "label": "Slaytlar"
         },
         {
-            "link": "/references/editslide",
+            "link": "/sliders/editslide",
             "label": "Düzenle"
         }
     ],

@@ -100,7 +100,7 @@ const state = {
             iconSpanClass: 'nav-icon',
             iconClass: 'fas fa-file-pdf',
             linkClass: 'nav-link',
-            linkLabel: 'Hakkımızda'
+            linkLabel: 'Belgeler'
         },
         {
             to: '/teams',
