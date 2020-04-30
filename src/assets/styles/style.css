@@ -28,6 +28,23 @@ body {
   color: #303030;
   font-size: 1.1rem;
 }
+#header .logo {
+  align-self: center;
+  padding: 1rem;
+}
+#header .logo img {
+  width: 70%;
+}
+#header .heading {
+  justify-self: center;
+  align-self: center;
+  padding: 1rem;
+}
+#header .icons {
+  padding-right: 2rem;
+  align-self: end;
+  grid-area: icons;
+}
 #content #side-container {
   background-color: #FAFAFA;
 }
@@ -41,9 +58,12 @@ body {
   background-color: #FAFAFA;
   border-top: thin solid #dee2e6;
 }
-#content .tabicon {
+#content .search-icon-container {
   border-bottom: thin solid #dee2e6;
-  align-self: flex-end;
+}
+#content .search-icon-container .search-container {
+  align-self: end;
+  padding-bottom: 0.5rem;
 }
 #view-container {
   border-left: thin solid #dee2e6;

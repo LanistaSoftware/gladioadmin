@@ -40,7 +40,7 @@ li {
 }
 
 a {
-  text-decoration: none !important;  
+  text-decoration: none !important;
 }
 
 body {
@@ -48,6 +48,33 @@ body {
   color: @nbfcolor;
   font-size: 1.1rem;
 }
+
+#header {
+
+  .logo {
+    align-self: center;
+    padding: 1rem;
+
+    img {
+      width: 70%;
+
+    }
+  }
+
+  .heading {
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+
+  }
+
+  .icons {
+    padding-right: 2rem;
+    align-self: end;
+    grid-area: icons;
+  }
+}
+
 
 #content {
   #side-container {
@@ -65,12 +92,16 @@ body {
   .tabsection {
     background-color: @sidebgcolor;
     border-top: thin solid @bordercolor;
-
   }
 
-  .tabicon {
+  .search-icon-container {
+
     border-bottom: thin solid @bordercolor;
-    align-self: flex-end;
+
+    .search-container {
+      align-self: end;
+      padding-bottom:0.5rem;
+    }
   }
 }
 
@@ -221,7 +252,8 @@ body {
 .bg-dark {
   background-color: @nbfcolor;
 }
+
 /**** Link Syle ****/
-.link{
-  font-size:1.3rem;
+.link {
+  font-size: 1.3rem;
 }

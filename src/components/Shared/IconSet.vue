@@ -28,16 +28,21 @@ export default {
 <style lang="less" scoped>
 .icon-container {
     display: grid;
-    grid-template-columns: fit-content(80%) auto;
     place-content:end;
 
 
     .icon-list {
         margin-bottom: 0;
         .icon-list-item {
-            display: inline-block;
+            float: left;
             padding-bottom: 0.3rem;
             padding-right: 0.5rem;
+        
+        }
+    .icon-list-item:last-child {
+            float: left;
+            padding-bottom: 0.3rem;
+            padding-right: 1rem;
         
         }
     }

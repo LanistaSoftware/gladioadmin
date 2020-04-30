@@ -1,6 +1,6 @@
 #app {
     display: grid;
-    grid-template-rows: auto minmax(83vh, auto) auto;
+    grid-template-rows: auto minmax(79vh, auto) auto;
     grid-template-areas:
         "header"
         "content"
@@ -10,15 +10,18 @@
 #header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 2fr 10fr;
-    grid-template-areas: "logo heading";
+    grid-template-columns: 2fr 8fr 1.5fr;
+    grid-template-areas: "logo heading helmet";
 
-    .logo {
+    .logo-lanista {
         grid-area: logo;
     }
 
     .heading {
         grid-area: heading;
+    }
+    .logo-helmet {
+        grid-area: helmet;
     }
 }
 
@@ -34,19 +37,25 @@
     .tabsection {
         grid-area: tabsection;
         display: grid;
-        grid-template-columns: 1fr 8fr;
+        grid-template-columns: 2fr 10fr;
     }
     .tabs{
         display: grid;
-        grid-template-columns: 10fr 4fr;
+        grid-template-columns: 8fr 4fr;
         place-content: end;
 
+        .search-icon-container{
+            display: grid;
+            grid-template-columns: 4fr 1.4fr;
+            place-content: end;
+        }
     }
+
 
     .nav-content-section {
         grid-area: navcontent;
         display: grid;
-        grid-template-columns: 1fr 8fr;
+        grid-template-columns: 2fr 10fr;
         grid-template-areas: "sidecontainer viewcontainer";
 
         #side-container {

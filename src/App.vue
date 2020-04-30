@@ -1,22 +1,25 @@
 <template>
   <div id="app">
-      <Header />
+    <Header />
     <div id="content">
       <section class="tabsection">
         <div class="spacing"></div>
         <div class="tabs">
-          <div class="tab"><Tabs :tabs="tabs" /></div>
-          <div class="tabicon"><IconSet /></div>
+          <div class="tab">
+            <Tabs :tabs="tabs" />
           </div>
+          <div class="search-icon-container">
+          <SearchBar />
+          <IconSet />
+          </div>
+        </div>
       </section>
       <section class="nav-content-section">
         <div id="side-container">
-          <Navigation :navs="getNavs"/>
+          <Navigation :navs="getNavs" />
         </div>
         <div id="view-container">
-
           <router-view />
-
         </div>
       </section>
     </div>
@@ -30,6 +33,7 @@ import Header from "./components/shared/Header.vue"
 import Navigation from "./components/shared/Navigation.vue"
 import FooterV from "./components/shared/FooterV.vue"
 import Tabs from "./components/shared/Tabs.vue"
+import SearchBar from "./components/shared/SearchBar.vue"
 import IconSet from "./components/shared/IconSet.vue"
 import {
 
@@ -42,6 +46,7 @@ export default {
       Navigation,
       Tabs,
       FooterV,
+      SearchBar,
       IconSet
     },
     computed: {
