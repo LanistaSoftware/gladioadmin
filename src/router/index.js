@@ -31,12 +31,13 @@ const routes = [{
     children: [{
         path: '/blogs',
         name: 'BlogList',
-        component: () => import( /* webpackChunkName: "about" */ '../components/blogs/BlogList.vue')
+        component: () => import( /* webpackChunkName: "about" */ '../components/Blogs/BlogList.vue')
       },
       {
         path: '/blogs/addblog',
         name: 'AddBlog',
-        component: () => import( /* webpackChunkName: "about" */ '../components/blogs/AddBlog.vue')
+      
+        component: () => import( /* webpackChunkName: "about" */ '../components/Blogs/AddBlog.vue')
 
       }
     ],

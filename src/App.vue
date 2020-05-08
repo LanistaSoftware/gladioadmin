@@ -29,12 +29,12 @@
   </div>
 </template>
 <script>
-import Header from "./components/shared/Header.vue"
-import Navigation from "./components/shared/Navigation.vue"
-import FooterV from "./components/shared/FooterV.vue"
-import Tabs from "./components/shared/Tabs.vue"
-import SearchBar from "./components/shared/SearchBar.vue"
-import IconSet from "./components/shared/IconSet.vue"
+import Header from "./components/Shared/Header.vue"
+import Navigation from "./components/Shared/Navigation.vue"
+import FooterV from "./components/Shared/FooterV.vue"
+import Tabs from "./components/Shared/Tabs.vue"
+import SearchBar from "./components/Shared/SearchBar.vue"
+import IconSet from "./components/Shared/IconSet.vue"
 import {
 
     mapGetters
